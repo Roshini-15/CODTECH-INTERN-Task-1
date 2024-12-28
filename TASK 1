@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int score = 0;
+    char answer;
+    cout << "Question 1: What is 2 + 2?" << endl;
+    cout << "a) 3\nb) 4\nc) 5\nd) 6\n";
+    cout << "Your answer: ";
+    cin >> answer;
+    if (answer == 'b' || answer == 'B') {
+        score++;
+    }
+    cout << "\nQuestion 2: What is the capital of England?" << endl;
+    cout << "a) Paris\nb) London\nc) Berlin\nd) Madrid\n";
+    cout << "Your answer: ";
+    cin >> answer;
+    if (answer == 'b' || answer == 'B') {
+        score++;
+    }
+    cout << "\nQuestion 3: Which planet is known as the Red Planet?" << endl;
+    cout << "a) Earth\nb) Mars\nc) Jupiter\nd) Saturn\n";
+    cout << "Your answer: ";
+    cin >> answer;
+    if (answer == 'b' || answer == 'B') {
+        score++;
+    }
+    cout << "\nYour final score is: " << score << "/3" << endl;
+    if (score == 3) {
+        cout << "Excellent! You got all the answers correct!" << endl;
+    } else if (score == 2) {
+        cout << "Good job! You got 2 out of 3 correct." << endl;
+    } else if (score == 1) {
+        cout << "Not bad! You got 1 out of 3 correct." << endl;
+    } else {
+        cout << "Better luck next time!" << endl;
+    }
+
+    return 0;
+}
